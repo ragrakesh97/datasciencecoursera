@@ -1,6 +1,4 @@
 ---
-output:
-  pdf_document: default
-  html_document: default
+output: md_document
 ---
 ## This is a markdown file
