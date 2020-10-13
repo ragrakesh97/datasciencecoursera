@@ -1,0 +1,59 @@
+vector()-> to assign a emtpy vector
+
+<Inf/NA/NAN>
+
+attribute(x)-> to get the attribute ofx
+
+coercion- type casting
+explicit typecasting format as.numeric(x)
+
+
+factors()
+example:P<-factor(c("yes","yes","yes","no","yes","no","yes","no"),levels=c("yes","no"))
+table(P)
+unclass(P)
+P
+
+
+reading data from different files:
+data frames:
+read.table
+read.csv
+data.matrix()
+readLines:
+fileName <- "C:/MyFolder/TEXT_TO_BE_PROCESSED.txt"
+con <- file(fileName,open="r")
+line <- readLines(con)
+close(con)
+
+source
+dget
+load
+unserialize
+
+writing data to files:
+write.table
+writeLines
+dump
+dput
+save
+serialize
+
+
+giving names to individual rows and columns
+names(x)
+dimnames(x)
+
+
+
+Subsetting:: very important
+
+
+##removing NA:
+x<-c(1,2,NA,4,NA)
+bad<-is.na(x)
+x[!bad]
+
+removing NA for multiple variables using complete cases
+goo<-complete.cases(x,y)
+x
